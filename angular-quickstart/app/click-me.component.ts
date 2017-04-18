@@ -1,15 +1,15 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'click-me',
-    template: `
-      <button (click)="onClickMe()">点我！</button>
-    `
+  selector: 'click-me',
+  template: `
+    <button (click)="onClickMe()">点我!</button>
+    {{clickMessage}}`
 })
-
 export class ClickMeComponent {
-  clickMessage='';
+  clickMessage = '';
+
   onClickMe() {
-    this.clickMessage = '菜鸟教程';
+    this.clickMessage = '菜鸟教程!';
   }
 }

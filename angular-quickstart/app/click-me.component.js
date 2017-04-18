@@ -12,14 +12,14 @@ var ClickMeComponent = (function () {
         this.clickMessage = '';
     }
     ClickMeComponent.prototype.onClickMe = function () {
-        this.clickMessage = '菜鸟教程';
+        this.clickMessage = '菜鸟教程!';
     };
     return ClickMeComponent;
 }());
 ClickMeComponent = __decorate([
     core_1.Component({
         selector: 'click-me',
-        template: "\n      <button (click)=\"onClickMe()\">\u70B9\u6211\uFF01</button>\n    "
+        template: "\n    <button (click)=\"onClickMe()\">\u70B9\u6211!</button>\n    {{clickMessage}}"
     })
 ], ClickMeComponent);
 exports.ClickMeComponent = ClickMeComponent;

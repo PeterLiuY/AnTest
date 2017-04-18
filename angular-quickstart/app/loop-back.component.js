@@ -6,13 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var LoopbackComponent = (function () {
     function LoopbackComponent() {
     }
     return LoopbackComponent;
 }());
 LoopbackComponent = __decorate([
-    Component({
+    core_1.Component({
         selector: 'loop-back',
         template: "\n    <input #box (keyup)=\"0\">\n    <p>{{box.value}}</p>\n  "
     })
